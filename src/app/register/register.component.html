@@ -1,0 +1,30 @@
+<!-- register.component.html -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-center">Register here</h5>
+          <form (submit)="onSubmit()">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" [(ngModel)]="userData.username" class="form-control" placeholder="Username">
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" [(ngModel)]="userData.email" class="form-control" placeholder="Email">
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" [(ngModel)]="userData.password" class="form-control" placeholder="Password">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
